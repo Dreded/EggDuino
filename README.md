@@ -23,7 +23,26 @@ if ebb_port is None:
             ebb_port = port[0]  # Success; EBB found by VID/PID match.
             break  # stop searching-- we are done.
 ```
+The aim of this fork is to allow hackers to easily add their own hardware/tweaks.
 
+# Build the firmware
+
+## Using Arduino IDE
+
+    - Click the github 'Clone or Download' button, then 'Download ZIP'
+    - Extract the ZIP
+    - Rename the extracted folder into 'EggDuino'
+    - Open 'EggDuino.ino' using the Arduino IDE
+    - Install the 'VarSpeedServo' library
+    - Build & upload firmware
+
+## Using Platformio
+
+    - Click the github 'Clone or Download' button, then 'Download ZIP'
+    - Extract the ZIP
+    - Build: 'platformio run'
+    - Upload firmware: 'platformio run --target upload' (bottom left of VS Code, Arrow beside checkmark)
+    
 # Install Platform.IO
 ### Optional but recommended
 This is optional as the sketch/firmware can be uploaded to the board using the Arduino IDE  
