@@ -26,7 +26,7 @@ The aim of this fork is to allow hackers to easily add their own hardware/tweaks
     - Build: 'platformio run'
     - Upload firmware: 'platformio run --target upload' (bottom left of VS Code, Arrow beside checkmark)
     
-# Disable Auto Restart
+# Disable Arduino Auto Restart
 ##### Failing to do so you will get "Failed to connect to EggBot. :(" when trying to plot inside Inkscape
 #### Arduino Uno:
 - Install a 10uF capacitor between Reset and GND ( obviously negative side in GND )
