@@ -36,7 +36,7 @@ The aim of this fork is to allow hackers to easily add their own hardware/tweaks
     - Install the 'VarSpeedServo' library
     - Build & upload firmware
 
-## Using Platformio
+## Using Platformio - Recommended
 
     - Click the github 'Clone or Download' button, then 'Download ZIP'
     - Extract the ZIP
