@@ -1,3 +1,6 @@
+# WORK IN PROGRESS
+## Still Working on Updating this for the newer plugin... so not ready.. DO NOT USE.
+
 # EggDuino
 Arduino Firmware for Spherebot / Eggbot integration in Inkscape
 Forked from [papabricole/EggDuino](https://github.com/papabricole/EggDuino) very outdated original readme in README_ORIG.md
