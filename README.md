@@ -1,6 +1,3 @@
-# WORK IN PROGRESS
-## Still Working on Updating this for the newer plugin... so not ready.. DO NOT USE.
-
 # EggDuino
 Arduino Firmware for Spherebot / Eggbot integration in Inkscape
 Forked from [papabricole/EggDuino](https://github.com/papabricole/EggDuino) very outdated original readme in README_ORIG.md
@@ -28,6 +25,10 @@ The aim of this fork is to allow hackers to easily add their own hardware/tweaks
     - Extract the ZIP
     - Build: 'platformio run'
     - Upload firmware: 'platformio run --target upload' (bottom left of VS Code, Arrow beside checkmark)
+    
+# Disable Auto Restart
+#### Failing to do so you will get "Failed to connect to EggBot. :(" when trying to plot inside Inkscape
+- Uno: Install a 10uF capacitor between Reset and GND ( obviously negative side in GND )
     
 # Install Platform.IO
 ### Optional but recommended
