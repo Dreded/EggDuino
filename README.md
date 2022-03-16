@@ -6,23 +6,6 @@ This works with latest software from... https://wiki.evilmadscientist.com/Instal
 
 To write this code to the arduino of your choice I highly recommend [VSCode](https://code.visualstudio.com/) with the Platform.IO Extension(install instructions below)
 
-### Tested with InkSkape v1.1.2 (march 2022)
-The Setup here is for a Arduino UNO Using a Protoneer CNC Shield V3 but can be easily changed for whatever combo you wish just edit the pins in **config.h**
-
-After installing the Evil Mad Scientist InkScape Plugin you then need to go into the InkScape Extensions folder
-- Linux: ~/.config/inkscape/extensions/
-- Windows: %APPDATA%\inkscape\extensions\
-
-then **edit** the file **axidraw_deps\plotink\ebb_serial.py** using any editor that isn't Notepad( I Like Notepad++ or VS Code )
-
-change the VID:PID to the VID:PID of your board(instructions below)
-```
-if ebb_port is None:
-    for port in com_ports_list:
-        if port[2].startswith("USB VID:PID=04D8:FD92"):
-            ebb_port = port[0]  # Success; EBB found by VID/PID match.
-            break  # stop searching-- we are done.
-```
 The aim of this fork is to allow hackers to easily add their own hardware/tweaks.
 
 # Build the firmware
@@ -52,6 +35,24 @@ If you enjoy Arduino do yourself a favour and install Platform.IO so you can use
 2. Open VSCode Extension Manager
 3. Search for official PlatformIO IDE extension
 4. Install PlatformIO IDE.
+
+### Tested with InkSkape v1.1.2 (march 2022)
+The Setup here is for a Arduino UNO Using a Protoneer CNC Shield V3 but can be easily changed for whatever combo you wish just edit the pins in **config.h**
+
+After installing the Evil Mad Scientist InkScape Plugin you then need to go into the InkScape Extensions folder
+- Linux: ~/.config/inkscape/extensions/
+- Windows: %APPDATA%\inkscape\extensions\
+
+then **edit** the file **axidraw_deps\plotink\ebb_serial.py** using any editor that isn't Notepad( I Like Notepad++ or VS Code )
+
+change the VID:PID to the VID:PID of your board(instructions below)
+```
+if ebb_port is None:
+    for port in com_ports_list:
+        if port[2].startswith("USB VID:PID=04D8:FD92"):
+            ebb_port = port[0]  # Success; EBB found by VID/PID match.
+            break  # stop searching-- we are done.
+```
 
 # How to find Vid Pid
 ### Recommended Method
